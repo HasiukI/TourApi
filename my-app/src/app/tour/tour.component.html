@@ -1,0 +1,86 @@
+<div class="cont">
+    <div>
+        
+        <div class="tour-main">
+            <img [src]="'data:image/png;base64,'+ info?.hotel?.image" alt="lll"/>
+            <div>
+                <div class="tour-main-name">
+                    <div class="tour-main-name-name">
+                        <span>{{info?.hotel?.name}}</span>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="../../assets/images/R.png"/>
+                            <div>
+                                <div>
+                                    <div [style.width]="info?.hotel?.raiting+'px'"></div>
+                                </div>   
+                            </div>
+                            <span id="tour-min">0%</span>
+                            <span  id="tour-max">100%</span>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/location.png"/>
+                            <a>sdfoksodf</a>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/airplane.png"/>
+                            <a>{{info?.hotel?.transport}}</a>
+                        </div>
+                        <div>
+                            <img src="../../assets/images/restaurant.png"/>
+                            <a>{{info?.hotel?.food}}</a>
+                        </div>
+                    </div> 
+                </div>
+                <div *ngIf="info?.hotel?.isActive">
+                    <div class="tour-main-price">
+                        <div>
+                            <p>{{info?.hotel?.description}}</p>
+                        </div>
+                        <div>
+                            <div>                         
+                                <span>Загальна вартість: </span>
+                                <b>{{info?.hotel?.price | currency:'UAH' }}</b>
+                            </div>
+                            <div class="tour-bt-main" (click)="BuyTour()">купити</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="tour-bt">
+            <div (click)="changeVisible(0)"> 
+                <span>Фото</span>
+            </div>
+           <div (click)="changeVisible(1)">
+                 <span>Відгуки</span>  
+           </div>   
+         </div>
+    </div>
+    <div class="tour-other">
+        <div>
+            <div class="tour-other-image" *ngIf="visibleimages">
+                <div *ngFor="let item of info?.images">
+                    <img [src]="'data:image/png;base64,' + item" alt="lll"/>
+                </div>
+            </div>
+            <div class="tour-review" *ngIf="visibleReview">
+                <div>
+                    <div *ngFor="let item of info?.reviews">
+                        <span>{{item?.title}}</span>
+                    </div>
+                </div>
+
+                <div>
+                    <textarea [(ngModel)]="review" placeholder="Ведіть текст"></textarea>
+                    <div (click)="SendReview()" class="tour-bt-main">Надіслати</div>
+                </div>
+                
+            </div>
+        </div>
+      
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="cardtour">
+    <!-- <img [src]="'data:image/png;base64,' + hotel?.image" alt="image"> -->
+    <img [src]="'data:image/png;base64,'+ hotel?.image" alt="image">
+    <div>
+        <div class="cardtour-main">
+            <h4>{{hotel?.name}}</h4>
+           
+        </div>
+        <div class="cardtour-other">
+            <div>
+                <div class="cardtour-rait">
+                    <img src="../../assets/images/R.png"/>
+                    <div>
+                        <div>
+                            <div [style.width]="hotel?.raiting +'px' "></div>
+                        </div>   
+                    </div>
+                    <span id="cardtour-max">{{hotel?.raiting}}%</span>
+                </div>
+                <div>
+                    <img src="../../assets/images/location.png" alt="location"/>  
+                    <span>Тернопіль, Україна</span>
+                </div>
+                <div>
+                    <img src="../../assets/images/restaurant.png" alt="restaurant"/>  
+                    <span>{{hotel?.food}}</span>
+                </div>
+                <div>
+                    <img src="../../assets/images/airplane.png" alt="airplane"/>  
+                    <span>{{hotel?.transport}}</span>
+                </div>
+            </div>
+            <div *ngIf="!hotel?.isActive">
+                <div class="tour-sold">
+                    <span>Sold</span>
+                </div>
+            </div>
+            <div class="cardtour-price">
+                <div>
+                    <h2>{{hotel?.price}}$</h2>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+   
+    
+</div>

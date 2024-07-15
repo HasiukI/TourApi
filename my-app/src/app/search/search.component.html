@@ -1,0 +1,57 @@
+<div class="cont">
+    <div>
+        <div>
+            <div class="select-cont">
+                <img src="../../assets/images/arrow.png" alt="arrow"/>
+                <select (change)="onSelectCountry($event)">
+                    <option>Оберіть країну</option>
+                    <option  *ngFor="let item of selectedCountry" [value]="item.id">{{item.name}}</option>
+                </select>
+            </div>
+           
+            <div *ngIf="visibleCitys === true" class="select-cont">
+                <img src="../../assets/images/arrow.png" alt="arrow"/>
+                <select (change)="onSelectCity($event)">
+                    <option>Оберіть місто</option>
+                    <option *ngFor="let item of selectedCitys" [value]="item.id">{{item.name}}</option>
+                </select>
+            </div>
+            <div *ngIf="visibleDate === true" class="select-cont">
+                <img src="../../assets/images/arrow.png" alt="arrow"/>
+                <span>З:</span>
+                <input type="date"/>
+            </div>
+            <div *ngIf="visibleDate === true" class="select-cont">
+                <img src="../../assets/images/arrow.png" alt="arrow"/>
+                <span>До:</span>
+                <input type="date"/>
+            </div>
+            <div *ngIf="visibleDate === true" class="select-cont">
+                <img src="../../assets/images/arrow.png" alt="arrow"/>
+                <select (change)="onSelectTransport($event)">
+                    <option>Оберіть транспорт</option>
+                    <option *ngFor="let item of allTransport" >{{item}}</option>
+                </select>
+            </div>
+            <div *ngIf="visibleDate === true" class="select-cont">
+                <img src="../../assets/images/arrow.png" alt="arrow"/>
+                <select (change)="onSelectFood($event)">
+                    <option>Оберіть харчування</option>
+                    <option *ngFor="let item of allfoods" [value]="item">{{item}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="grid-cont">
+        <div  *ngFor="let item of curentTours" >
+            <a [routerLink]="['/tour', item.id]" routerLinkActive="active">
+                <app-cardtour [hotel]="item"></app-cardtour>
+            </a>
+            
+        </div>
+    </div>
+    
+  
+    
+</div>
+

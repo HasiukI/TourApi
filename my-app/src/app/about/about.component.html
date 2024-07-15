@@ -1,0 +1,159 @@
+<div  class="about">
+    <div class="about-start">
+        <h1>Grand Tourismo</h1>
+        <div  class="about-start-head">
+            <div>
+                <img src="../../assets/images/team.png" alt="pic" />
+                <span>Велике товариство</span>
+            </div>
+            <div>
+                <img src="../../assets/images/trust.png" alt="pic"/>
+                <span>3000 задоволених</span>
+            </div>
+            <div>
+                <img src="../../assets/images/success.png" alt="pic"/>
+                <span>Завжди успіх</span>
+            </div>
+            <div>
+                <img src="../../assets/images/learning.png" alt="pic"/>
+                <span>Ідея хороша</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-top">
+        <div>
+            <span>Популярні путівки</span>
+        </div>
+       <div>
+            <div class="about-top-section">
+                <div>
+                    <div>
+                        <span>Україна</span>
+                    </div>
+                    <img  src="../../assets/images/ukraine.jpg" alt="img"/>
+                </div>
+                <div>        
+                    <div>Украї́на (МФА: [ʊkrɐˈjɪn̪ɐ] ( прослухати)) — держава, розташована у Східній та частково у Центральній Європі, охоплює південний захід Східноєвропейської рівнини, частину Східних Карпат і Кримські гори. Межує з Румунією і Молдовою на південному заході, з Угорщиною, Словаччиною та Польщею на заході, з Білоруссю на півночі та з Росією на сході й північному сході. На півдні омивається Чорним та Азовським морями. Площа становить 603 700 км². Найбільша за площею країна серед повністю розташованих у Європі</div>
+                    <div class="about-top-card-cont">
+                        <div *ngFor="let item of popularUkraine">
+                            <app-card-popular-tour [hotel]="item"></app-card-popular-tour>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-top-section">
+                <div>
+                    <div>
+                        <span>Америка</span>
+                    </div>
+                    <img  src="../../assets/images/usa.jpg" alt="img"/>
+                </div>
+                <div>        
+                    <div>Сполу́чені Шта́ти Аме́рики (скор. США, Сполу́чені Шта́ти, Шта́ти, Аме́рика; англ. the United States of America, USA, U.S., the USA, the States, America) — федеративна республіка в Північній Америці, що складається з 50 штатів: Аляски, Гаваїв, 48 штатів на території між Атлантичним і Тихим океанами і між Канадою і Мексикою та федерального (столичного) округу Колумбія. Окрім того, США належать частина Віргінських островів (Американські Віргінські Острови) та Пуерто-Рико у Вест-Індії, Східне Самоа, Гуам, Північні Маріанські Острови та інші острови в Океанії. Столиця — місто Вашингтон. Найбільше місто — Нью-Йорк</div>
+                    <div class="about-top-card-cont">
+                        <div class="about-top-card-cont">
+                            <div *ngFor="let item of popularUSA">
+                                <app-card-popular-tour [hotel]="item"></app-card-popular-tour>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    
+    </div>
+    
+    <div class="about-search">
+        <div>
+            <span>Знайти подорож</span>
+        </div>
+       
+        <div>
+            <div  class="about-search-cont"> 
+                <a routerLink="/search" routerLinkActive="active">
+                    <div>
+                        <div>
+                            <img src="../../assets/images/pic1.jpg" alt="img"/>
+                        </div>
+                        <span>Луцьк</span>
+                    </div>
+                </a>
+                <a routerLink="/search" routerLinkActive="active">
+                    <div>
+                        <div>
+                            <img src="../../assets/images/pic.jpg" alt="img"/>
+                        </div>
+                        <span>Романівка</span>
+                    </div>
+                </a>
+                <a routerLink="/search" routerLinkActive="active">
+                    <div>
+                        <div>
+                            <img src="../../assets/images/pic3.jpg" alt="img"/>
+                        </div>
+                        <span>Довженка</span>
+                    </div>
+                </a>
+                <a routerLink="/search" routerLinkActive="active">
+                    <div>
+                        <div>
+                            <img src="../../assets/images/pic5.jpg" alt="img"/>
+                        </div>
+                        <span>Збараж</span>
+                    </div>
+                </a>   
+            </div>
+            <div class="about-search-sam">
+                <span>Бажаєте самі вибрати</span>
+                <a routerLink="/search" routerLinkActive="active">
+                    <div>
+                        <span>Знайти</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="about-users">
+        <div>
+           <span>Відгуки</span>
+        </div>
+        <div>
+            <div>
+                <div class="about-users-user">
+                    <img src="../../assets/images/user.png" alt="user">
+                    <div>
+                        <span>Всe супер клас</span>
+                        <span>13.01.2001</span>
+                    </div>
+                </div>
+                <div class="about-users-user">
+                    <img src="../../assets/images/user.png" alt="user">
+                    <div>
+                        <span>Всe супер клас</span>
+                        <span>13.01.2001</span>
+                    </div>
+                </div>
+                <div class="about-users-user">
+                    <img src="../../assets/images/user.png" alt="user">
+                    <div>
+                        <span>Всe супер клас</span>
+                        <span>13.01.2001</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-search-sam">
+                <span>Бажаєте відгукнутись</span>
+                <a routerLink="/contact" routerLinkActive="active">
+                    <div>
+                        <span>Відгукнутись</span>
+                    </div>
+                </a>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+

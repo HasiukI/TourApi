@@ -1,0 +1,38 @@
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont >div:first-child{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+.cont >div:first-child >div{
+    margin: 5px;
+    display: flex;
+    border-bottom: 3px solid #224d6a;
+
+}
+.select-cont{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 3px;
+}
+.select-cont >img{
+    width: 50px;
+}
+
+.grid-cont{
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 20px 20px;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}

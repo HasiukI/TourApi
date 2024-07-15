@@ -1,0 +1,39 @@
+.contact-cont{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.contact-cont-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.contact-cont-cont >div{  
+  display: flex;
+  align-items: center;
+  background-color: rgb(163, 199, 231);
+  padding: 10px;
+  border-radius: 20px;
+}
+.contact-cont-cont >div >img{
+  width: 3vw;
+  margin-right: 10px;
+}
+.contact-message{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: rgb(140, 181, 235);
+  border-radius: 40px;
+  padding: 10px;
+  align-items: center;
+}
+.contact-message >textarea{
+  width: 80%;
+  height: 10vh;
+}
+.contact-message >button{
+  margin-top: 10px;
+  width: 100px;
+}

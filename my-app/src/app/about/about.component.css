@@ -1,0 +1,218 @@
+.about-start{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.about-start >h1{
+    background-image: url('../../assets/images/pic4.jpg');
+    background-size: 80% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 8em;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.about-start >div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-start >div >div{
+    display: flex;
+    align-items: center;
+}
+.about-start >div >div >img{
+    width: 10vh;
+}
+
+    /* top */
+.about-top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    margin-bottom: 50px;
+}
+.about-top >div:first-child{
+    background-color: #224e68;
+    color: #f5f4f4;
+    font-size: 1.2em;
+    padding: 8px;
+}
+.about-top >div:last-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about-top-section{
+    display: flex;
+    flex-direction: column;
+
+}
+.about-top-section >div:first-child{
+    position: relative;   
+     width: 100%;
+    height: 25vh;
+    overflow: hidden;
+}
+.about-top-section >div:first-child >div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 8em;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px black;
+    /* background-color: rgba(0, 0, 0, 0.452); */
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-top-section >div:first-child >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.about-top-section >div:last-child >div:first-child{
+    padding: 20px;
+}
+.about-top-section >div:last-child{
+    margin-bottom: 30px;
+}
+.about-top-card-cont{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    margin-bottom: 10px;
+}
+
+
+
+
+
+    /* search */
+.about-search{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+.about-search >div:first-child{
+    background-color: #224e68;
+    color: #f5f4f4;
+    font-size: 1.2em;
+    padding: 8px;
+}
+.about-search >div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.about-search-cont{
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+}
+.about-search-cont >a >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+.about-search-cont >a >div:hover >div{
+    transform: scale(1.05);
+}
+.about-search-cont >a >div >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #205e7e;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+.about-search-cont >a >div >div >img{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+.about-search-sam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+}
+.about-search-sam >a >div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 220px;
+    height: 50px;
+    background-color: #1f739b;
+    border-radius: 10px;
+    font-size: 1.87em;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+
+.about-search-sam >a >div >span{
+    text-decoration: none;
+}
+.about-search-sam >a >div:hover{
+    background-color:#228eb8;
+}
+
+    /* vidguku */
+.about-users{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.about-users >div:first-child{
+    background-color: #224e68;
+    color: #f5f4f4;
+    font-size: 1.2em;
+    padding: 8px;
+    gap: 10px;
+}
+.about-users >div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-users-user{
+    margin-top: 10px;
+    display: flex;
+    border-radius: 30px;
+    background-color: #b1e2f0;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.about-users-user >img{
+    width: 6vw;
+    margin-right: 10px;
+}
+.about-users-user >div{
+    display: flex;
+    flex-direction: column;
+}
+.about-users-user >div >span:last-child{
+    font-size: 0.7em;
+}
